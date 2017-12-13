@@ -6,7 +6,7 @@
 
 /**
  *
- * @author CHANGE_THIS_TO_YOUR_NAME
+ * @author Slatz8075
  */
 public class Sundae{
     

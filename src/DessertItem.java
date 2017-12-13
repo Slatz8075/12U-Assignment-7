@@ -6,7 +6,7 @@
  * All other dessert items will be inheriting from this class.
  * DO NOT CHANGE THIS CLASS!
  * 
- * @author Mr. A. Lamont
+ * @author Slatz8075
  */
 public abstract class DessertItem {
   
