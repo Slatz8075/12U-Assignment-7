@@ -31,7 +31,7 @@ public class Sundae extends IceCream {
     //this is the method that prints out the part of the receipt that corresponds to sundae
     public String toString() {
         //print out the test stating that this is a sundae
-        String output = toppingName + " Sundae with" + "/n";
+        String output = toppingName + " Sundae with" + "\n";
         //now reffer to the icecream class to print the rest
         output += super.toString();
         //finally return the output

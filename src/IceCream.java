@@ -27,7 +27,6 @@ public class IceCream extends DessertItem{
         return this.cost;
     }
 
-  
     //this is the method that prints out the part of the receipt that corresponds to icecream
     public String toString() {
         //start with the name for the icecream
@@ -37,6 +36,7 @@ public class IceCream extends DessertItem{
         for(int i = 0; i < (DessertShoppe.RECEIPT_WIDTH - (super.getName().length() + DessertShoppe.cents2dollarsAndCents(getCost()).length())); i++){
             //add one space to between the name and the total
             output += " ";
+           
         }
         //finally add the total of this candy purchase
         output += DessertShoppe.cents2dollarsAndCents(getCost());
