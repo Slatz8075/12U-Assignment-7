@@ -26,13 +26,13 @@ public class Candy extends DessertItem {
     //create a function that returns the cost of candy in cents
     public int getCost(){
         //multiply the weight (in pounds) with the price per pound
-        return (int)((weight*pricePerLbs));
+        return (int)Math.round(weight*pricePerLbs);
     }
 
     //this is the method that prints out the part of the receipt that corresponds to candy
     public String toString() {
         //print out the first line: with its weight in pounds, and its price per pound
-        String output = this.weight + " lbs. @ $" + DessertShoppe.cents2dollarsAndCents((int)(this.pricePerLbs)) + " /lb" + "\n";
+        String output = this.weight + " lbs. @ $" + DessertShoppe.cents2dollarsAndCents((int)(this.pricePerLbs)) + " /lb." + "\n";
         //now add the name of the candy
         output += super.getName();
         //now add spaces to this line but leave room for the total cost at the end of the line
