@@ -26,7 +26,7 @@ public class Cookie extends DessertItem{
     //create a function that returns the cost of cookie in cents
     public int getCost(){
         //multiply the number by the cost per cookie
-        return (int)((number*(pricePer12/12)));
+        return (int)Math.round(number*(pricePer12/12));
     }
 
     //this is the method that prints out the part of the receipt that corresponds to cookie
